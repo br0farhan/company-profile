@@ -1,0 +1,12 @@
+{
+  "name": "company-profile-frontend",
+  "version": "1.0.0",
+  "description": "Company Profile Frontend",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 3000"
+  },
+  "keywords": ["company", "profile", "frontend"],
+  "author": "Your Name",
+  "license": "MIT"
+}
