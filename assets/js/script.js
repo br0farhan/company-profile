@@ -302,7 +302,7 @@ function handleContactForm(e) {
     const message = formData.get('message');
 
     // Format message for WhatsApp
-    const whatsappMessage = `*Pesan Baru dari Website* 🌟\n\n` +
+    const whatsappMessage = `*Pesan Baru dari Website*\n\n` +
         `*Nama:* ${name}\n` +
         `*Email:* ${email}\n` +
         `*Subjek:* ${subject}\n\n` +
