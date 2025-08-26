@@ -58,7 +58,15 @@ const translations = {
         form_name_placeholder: 'Masukkan nama Anda',
         form_email_placeholder: 'nama@email.com',
         form_subject_placeholder: 'Subjek pesan Anda',
-        form_message_placeholder: 'Tulis pesan Anda di sini...'
+        form_message_placeholder: 'Tulis pesan Anda di sini...',
+        project_web_desc: 'Modern web application dengan teknologi terkini',
+        project_mobile1_desc: 'Aplikasi mobile dengan Flutter framework',
+        project_mobile2_desc: 'Sistem presensi mobile dengan GPS tracking',
+        project_marketing_desc: 'Strategi pemasaran digital yang efektif',
+        project_trax_desc: 'Aplikasi mobile dengan Flutter framework',
+        project_security_desc: 'Identifikasi kerentanan pada subdomain berupa Directory Listing terbuka yang memungkinkan akses dan pengunduhan folder sensitif.'
+
+        
     },
     en: {
         nav_home: 'Home',
@@ -109,7 +117,14 @@ const translations = {
         form_name_placeholder: 'Enter your name',
         form_email_placeholder: 'name@email.com',
         form_subject_placeholder: 'Your message subject',
-        form_message_placeholder: 'Write your message here...'
+        form_message_placeholder: 'Write your message here...',
+
+        project_web_desc: 'Modern web application with cutting-edge technology',
+        project_mobile1_desc: 'Mobile application built with Flutter framework',
+        project_mobile2_desc: 'Mobile attendance system with GPS tracking',
+        project_marketing_desc: 'Effective digital marketing strategy',
+        project_trax_desc: 'Mobile application built with Flutter framework',
+        project_security_desc: 'Identification of vulnerabilities in subdomains in the form of open Directory Listing that allows access and download of sensitive folders.'
     }
 };
 
