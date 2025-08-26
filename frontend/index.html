@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Stack Developer</title>
-    <meta name="description" content="Portfolio CV Farhan - Full Stack Developer dengan keahlian HTML, CSS, JavaScript, dan Laravel">
-    <meta name="keywords" content="developer, full stack, HTML, CSS, JavaScript, Laravel, portfolio">
+    <title>CV-Farhan</title>
+    <meta name="description" content="Portfolio CV Farhan - Flutter Enthusiast & Mobile Developer dengan keahlian Flutter, Mobile Development, Cyber Security, dan Digital Marketing">
+    <meta name="keywords" content="flutter developer, mobile developer, cybersecurity, digital marketing, HTML, CSS, JavaScript, Dart, PHP, Laravel, portfolio">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Farhan - Full Stack Developer">
-    <meta property="og:description" content="Portfolio CV Farhan - Full Stack Developer">
+    <meta property="og:title" content="Farhan - Flutter Enthusiast & Mobile Developer">
+    <meta property="og:description" content="Portfolio CV Farhan - Flutter Enthusiast & Mobile Developer">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://br0farhan.github.io">
     
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -29,26 +29,372 @@
         <div class="loader"></div>
     </div>
 
-    <!-- Header & Hero Component -->
-    <div id="header-component"></div>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">Farhan Martiyansyah</div>
+                <ul class="nav-menu" id="nav-menu">
+                    <!-- <li><a href="#home" data-lang="nav_home">Beranda</a></li> -->
+                    <li><a href="#about" data-lang="nav_about">Tentang</a></li>
+                    <li><a href="#skills" data-lang="nav_skills">Keahlian</a></li>
+                    <li><a href="#projects" data-lang="nav_projects">Proyek</a></li>
+                    <li><a href="#contact" data-lang="nav_contact">Kontak</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button class="language-toggle" id="language-toggle">EN</button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <!-- About Component -->
-    <div id="about-component"></div>
+    <!-- Header & Hero Section
+    <header id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-lang="hero_title">Hai, Saya Farhan</h1>
+                <h2 class="hero-subtitle" data-lang="hero_subtitle">Flutter Enthusiast & Mobile Developer</h2>
+                <p class="hero-description" data-lang="hero_description">
+                    Pengembang mobile yang bersemangat dengan keahlian dalam Flutter dan teknologi mobile modern. Saya menciptakan aplikasi mobile yang indah dan user-friendly.
+                </p>
+                <a href="#projects" class="cta-button" data-lang="hero_cta">Lihat Karya Saya</a>
+               <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div> -->
+            <!-- </div>
+        </div>
+    </header> --> 
 
-    <!-- Skills Component -->
-    <div id="skills-component"></div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="about_title">Tentang Saya</h2>
+                <p class="section-subtitle" data-lang="about_subtitle">Mengenal saya lebih dekat</p>
+            </div>
+            <div class="about-content">
+                <!-- Kolom Kiri: Teks -->
+                <div class="about-text">
+                    <h3 data-lang="about_name">Hai, Saya Farhan</h3>
+                    <h4 data-lang="about_subtitle_role">Frontend Developer & White Hat</h4>
+                    <p data-lang="about_description">
+                        Halo! Nama saya Farhan dan saya seorang penggemar Flutter. Ketertarikan saya pada pengembangan aplikasi seluler dimulai pada tahun 2021 ketika saya mempelajari Flutter di tahun terakhir kuliah dan memutuskan untuk fokus di sana untuk memulai karier saya sebagai pengembang aplikasi seluler. Selain itu, saya sedang mempelajari keamanan siber dan telah melakukan beberapa pemeriksaan di beberapa situs web yang memiliki celah/bug.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4 id="experience-years">4+</h4>
+                            <p data-lang="stats_experience">Tahun Pengalaman</p>
+                        </div>
+                        <div class="stat">
+                            <h4 id="projects-completed">20+</h4>
+                            <p data-lang="stats_projects">Proyek Selesai</p>
+                        </div>
+                        <div class="stat">
+                            <h4 id="technologies-used">15+</h4>
+                            <p data-lang="stats_technologies">Teknologi</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kolom Kanan: Foto Profile Lingkaran -->
+                <div class="about-image">
+                    <div class="profile-container">
+                        <img src="assets/images/Farhan.png" alt="Farhan Profile" class="profile-img">
+                        <div class="profile-overlay">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Projects Component -->
-    <div id="projects-component"></div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="skills_title">Keahlian</h2>
+                <p class="section-subtitle" data-lang="skills_subtitle">Teknologi yang saya kuasai</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-html5"></i> HTML</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                        <li><i class="fab fa-js-square"></i> JavaScript</li>
+                        <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-mobile"></i> Dart</li>
+                        <li><i class="fas fa-mobile-alt"></i> Flutter</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-php"></i> PHP</li>
+                        <li><i class="fas fa-code"></i> Laravel</li>
+                        <li><i class="fas fa-database"></i> API (JSON)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-bug"></i> Penetration Testing</li>
+                        <li><i class="fas fa-search"></i> Vulnerability Assessment</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-bullhorn"></i> Digital Marketing</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-chart-line"></i> SEO</li>
+                        <li><i class="fas fa-ad"></i> Social Media Marketing</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-wordpress"></i> WordPress</li>
+                        <li><i class="fas fa-file-excel"></i> Microsoft Office</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Contact Component -->
-    <div id="contact-component"></div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="projects_title">Proyek</h2>
+                <p class="section-subtitle" data-lang="projects_subtitle">Karya-karya terbaik saya</p>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
+                <button class="filter-btn" data-filter="security">Cybersecurity</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Web Project -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/images/web.jpeg" alt="Web Development Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Web Application</h3>
+                        <p class="project-description">Modern web application dengan teknologi terkini</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Project 1 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="assets/images/mobileone.jpeg" alt="Mobile App Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mobile Application</h3>
+                        <p class="project-description">Aplikasi mobile dengan Flutter framework</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Project 2 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="assets/images/mobilepresensi.jpeg" alt="Presensi Mobile App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mobile Application</h3>
+                        <p class="project-description">Sistem presensi mobile dengan GPS tracking</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">GPS</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Digital Marketing Project -->
+                <div class="project-card" data-category="marketing">
+                    <div class="project-image">
+                        <img src="assets/images/digimar.jpeg" alt="Digital Marketing Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Digital Marketing Campaign</h3>
+                        <p class="project-description">Strategi pemasaran digital yang efektif</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SEO</span>
+                            <span class="tech-tag">Social Media</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Security Project -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="assets/images/trax.jpeg" alt="Mobile trax">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mobile Application</h3>
+                        <p class="project-description">Aplikasi mobile dengan Flutter framework</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Firebase</span>
+                             <span class="tech-tag">GPS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="contact_title">Kontak</h2>
+                <p class="section-subtitle" data-lang="contact_subtitle">Mari berkolaborasi</p>
+            </div>
+            <div class="contact-content">
+                <!-- Left Column - Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3 data-lang="contact_intro_title">Mari Terhubung</h3>
+                        <p data-lang="contact_intro_text">Saya selalu terbuka untuk mendiskusikan proyek baru, peluang kreatif, atau sekadar mengobrol tentang teknologi.</p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 data-lang="contact_email_label">Email</h4>
+                                <p>farhan.martiyansyah@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 data-lang="contact_phone_label">Telepon</h4>
+                                <p>0855 9113 3335</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 data-lang="contact_location_label">Lokasi</h4>
+                                <p>Bogor, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+                
+                <!-- Right Column - Contact Form -->
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h3 data-lang="contact_form_title">Kirim Pesan</h3>
+                        <p data-lang="contact_form_subtitle">Ceritakan tentang proyek Anda dan mari kita wujudkan bersama</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" data-lang="form_name_label">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" required data-lang="form_name_placeholder" placeholder="Masukkan nama Anda">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-lang="form_email_label">Email</label>
+                                <input type="email" id="email" name="email" required data-lang="form_email_placeholder" placeholder="nama@email.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" data-lang="form_subject_label">Subjek</label>
+                            <input type="text" id="subject" name="subject" required data-lang="form_subject_placeholder" placeholder="Subjek pesan Anda">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-lang="form_message_label">Pesan</label>
+                            <textarea id="message" name="message" required data-lang="form_message_placeholder" placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-lang="form_submit_btn">Kirim Pesan</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Scripts -->
-    <script src="assets/js/api.js"></script>
-    <script src="assets/js/components.js"></script>
-    <!-- Di bagian bawah sebelum closing body tag -->
-    <script src="assets/js/language.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
