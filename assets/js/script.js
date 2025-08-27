@@ -24,7 +24,7 @@ const translations = {
         about_title: 'Tentang Saya',
         about_subtitle: 'Mengenal saya lebih dekat',
         about_name: 'Hai, Saya Farhan',
-        about_subtitle_role: 'Frontend Developer & White Hat',
+        about_subtitle_role: 'Front End Developer & White Hat',
         about_description: 'Halo! Nama saya Farhan dan saya seorang penggemar Flutter. Ketertarikan saya pada pengembangan aplikasi seluler dimulai pada tahun 2021 ketika saya mempelajari Flutter di tahun terakhir kuliah dan memutuskan untuk fokus di sana untuk memulai karier saya sebagai pengembang aplikasi seluler. Selain itu, saya sedang mempelajari keamanan siber dan telah melakukan beberapa pemeriksaan di beberapa situs web yang memiliki celah/bug.',
         stats_experience: 'Tahun Pengalaman',
         stats_projects: 'Proyek Selesai',
@@ -86,7 +86,7 @@ const translations = {
         nav_contact: 'Contact',
 
         hero_title: 'Hi, I\'m Farhan',
-        hero_subtitle: 'Frontend Developer & White Hat',
+        hero_subtitle: 'Front End Developer & White Hat',
         hero_description: 'Hello! My name is Farhan and I am a Flutter enthusiast. My interest in mobile app development started in 2021 when I studied Flutter in my final year of college and decided to focus there to start my career as a mobile app developer. Apart from that, I am studying cyber security and have conducted several checks on several websites that have loopholes/bugs.',
         hero_cta: 'View My Work',
 
