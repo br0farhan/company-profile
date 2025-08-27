@@ -13,6 +13,7 @@ const translations = {
         nav_about: 'Tentang',
         nav_skills: 'Keahlian',
         nav_projects: 'Proyek',
+        nav_blog: 'Blog',
         nav_contact: 'Kontak',
 
         hero_title: 'Hai, Saya Farhan',
@@ -76,6 +77,7 @@ const translations = {
         nav_about: 'About',
         nav_skills: 'Skills',
         nav_projects: 'Projects',
+        nav_blog: 'Blog',
         nav_contact: 'Contact',
 
         hero_title: 'Hi, I\'m Farhan',
@@ -199,7 +201,68 @@ const translations = {
     }
 };
 
-// Initialize when DOM is loaded
+// Fungsi untuk fetch artikel Medium
+async function fetchMediumPosts() {
+    try {
+        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@br0farhan');
+        const data = await response.json();
+        
+        if (data.status === 'ok') {
+            displayBlogPosts(data.items.slice(0, 3)); // Ambil 3 artikel terbaru
+        }
+    } catch (error) {
+        console.error('Error fetching Medium posts:', error);
+        displayErrorMessage();
+    }
+}
+
+function displayBlogPosts(posts) {
+    const blogGrid = document.getElementById('blog-grid');
+    
+    blogGrid.innerHTML = posts.map(post => {
+        const publishDate = new Date(post.pubDate).toLocaleDateString('id-ID', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        // Ekstrak gambar dari konten
+        const imgMatch = post.content.match(/<img[^>]+src="([^"]+)"/i);
+        const imageUrl = imgMatch ? imgMatch[1] : 'assets/images/blog-default.jpg';
+        
+        // Bersihkan deskripsi dari HTML tags
+        const description = post.description.replace(/<[^>]*>/g, '').substring(0, 150) + '...';
+        
+        return `
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="${imageUrl}" alt="${post.title}" loading="lazy">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-date">${publishDate}</span>
+                        <span class="blog-category">Medium</span>
+                    </div>
+                    <h3 class="blog-title">${post.title}</h3>
+                    <p class="blog-description">${description}</p>
+                    <a href="${post.link}" target="_blank" rel="noopener noreferrer" class="blog-link" data-lang="blog_read_more">Baca Selengkapnya</a>
+                </div>
+            </article>
+        `;
+    }).join('');
+}
+
+function displayErrorMessage() {
+    const blogGrid = document.getElementById('blog-grid');
+    blogGrid.innerHTML = `
+        <div class="blog-error">
+            <p>Maaf, tidak dapat memuat artikel saat ini.</p>
+            <a href="https://medium.com/@br0farhan" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Kunjungi Medium</a>
+        </div>
+    `;
+}
+
+// Panggil fungsi saat DOM loaded
 document.addEventListener('DOMContentLoaded', function () {
     // Hide loading screen
     setTimeout(() => {
@@ -220,6 +283,9 @@ document.addEventListener('DOMContentLoaded', function () {
     setupNavbarScroll();
     setupSkillsAnimation();
     setupContactForm();
+    
+    // Fetch Medium blog posts
+    fetchMediumPosts();
 });
 
 // Setup Mobile Navigation
