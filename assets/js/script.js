@@ -64,7 +64,10 @@ const translations = {
         project_mobile2_desc: 'Sistem presensi mobile dengan GPS tracking',
         project_marketing_desc: 'Strategi pemasaran digital yang efektif',
         project_trax_desc: 'Aplikasi mobile dengan Flutter framework',
-        project_security_desc: 'Identifikasi kerentanan pada subdomain berupa Directory Listing terbuka yang memungkinkan akses dan pengunduhan folder sensitif.'
+        project_security_desc: 'Identifikasi kerentanan pada subdomain berupa Directory Listing terbuka yang memungkinkan akses dan pengunduhan folder sensitif.',
+        project_konstruka_desc: 'Website konstruksi dengan fitur manajemen proyek dan portofolio',
+        project_formwa_desc: 'Tool gratis untuk membuat form WhatsApp dengan mudah dan cepat',
+        project_passgenerator_desc: 'Tool gratis untuk generate password yang aman dan kuat dengan berbagai opsi kustomisasi'
 
         
     },
@@ -124,7 +127,75 @@ const translations = {
         project_mobile2_desc: 'Mobile attendance system with GPS tracking',
         project_marketing_desc: 'Effective digital marketing strategy',
         project_trax_desc: 'Mobile application built with Flutter framework',
-        project_security_desc: 'Identification of vulnerabilities in subdomains in the form of open Directory Listing that allows access and download of sensitive folders.'
+        project_security_desc: 'Identification of vulnerabilities in subdomains in the form of open Directory Listing that allows access and download of sensitive folders.',
+        project_konstruka_desc: 'Construction website with project management and portfolio features',
+        project_formwa_desc: 'Free tool to create WhatsApp forms easily and quickly',
+        project_passgenerator_desc: 'Free tool to generate secure and strong passwords with various customization options'
+
+        
+    },
+    en: {
+        nav_home: 'Home',
+        nav_about: 'About',
+        nav_skills: 'Skills',
+        nav_projects: 'Projects',
+        nav_contact: 'Contact',
+
+        hero_title: 'Hi, I\'m Farhan',
+        hero_subtitle: 'Frontend Developer & White Hat',
+        hero_description: 'Hello! My name is Farhan and I am a Flutter enthusiast. My interest in mobile app development started in 2021 when I studied Flutter in my final year of college and decided to focus there to start my career as a mobile app developer. Apart from that, I am studying cyber security and have conducted several checks on several websites that have loopholes/bugs.',
+        hero_cta: 'View My Work',
+
+        about_title: 'About Me',
+        about_subtitle: 'Get to know me better',
+        about_name: 'Hi, I\'m Farhan',
+        about_subtitle_role: 'Frontend Developer & White Hat',
+        about_description: 'Hello! My name is Farhan and I am a Flutter enthusiast. My interest in mobile app development started in 2021 when I studied Flutter in my final year of college and decided to focus there to start my career as a mobile app developer. Apart from that, I am studying cyber security and have conducted several checks on several websites that have loopholes/bugs.',
+        stats_experience: 'Years Experience',
+        stats_projects: 'Projects Completed',
+        stats_technologies: 'Technologies',
+
+        skills_title: 'Skills',
+        skills_subtitle: 'Technologies I master',
+
+        projects_title: 'Projects',
+        projects_subtitle: 'My best works',
+        filter_all: 'All',
+        filter_web: 'Web',
+        filter_mobile: 'Mobile',
+        filter_marketing: 'Digital Marketing',
+        filter_security: 'Cybersecurity',
+
+        contact_title: 'Contact',
+        contact_subtitle: 'Let\'s collaborate',
+        contact_intro_title: 'Let\'s Connect',
+        contact_intro_text: 'I\'m always open to discussing new projects, creative opportunities, or just chatting about technology.',
+        contact_email_label: 'Email',
+        contact_phone_label: 'Phone',
+        contact_location_label: 'Location',
+        contact_form_title: 'Send Message',
+        contact_form_subtitle: 'Tell me about your project and let\'s make it happen together',
+        form_name_label: 'Full Name',
+        form_email_label: 'Email',
+        form_subject_label: 'Subject',
+        form_message_label: 'Message',
+        form_submit_btn: 'Send Message',
+        form_name_placeholder: 'Enter your name',
+        form_email_placeholder: 'name@email.com',
+        form_subject_placeholder: 'Your message subject',
+        form_message_placeholder: 'Write your message here...',
+
+        project_web_desc: 'Modern web application with cutting-edge technology',
+        project_mobile1_desc: 'Mobile application built with Flutter framework',
+        project_mobile2_desc: 'Mobile attendance system with GPS tracking',
+        project_marketing_desc: 'Effective digital marketing strategy',
+        project_trax_desc: 'Mobile application built with Flutter framework',
+        project_security_desc: 'Identification of vulnerabilities in subdomains in the form of open Directory Listing that allows access and download of sensitive folders.',
+        project_konstruka_desc: 'Construction website with project management and portfolio features',
+        project_formwa_desc: 'Free tool to create WhatsApp forms easily and quickly',
+        project_passgenerator_desc: 'Free tool to generate secure and strong passwords with various customization options'
+
+        
     }
 };
 
